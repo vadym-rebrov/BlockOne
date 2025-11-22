@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Director {
     private String fullName;
     private String country;
-    private int birthYear;
+    private Integer birthYear;
 
     public Director(String fullName, String country, int birthYear) {
         this.fullName = fullName;
@@ -13,10 +13,12 @@ public class Director {
         this.birthYear = birthYear;
     }
 
+    public Director(){}
+
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof Director director)) return false;
-        return birthYear == director.birthYear && Objects.equals(fullName, director.fullName) && Objects.equals(country, director.country);
+        return Objects.equals(birthYear, director.birthYear) && Objects.equals(fullName, director.fullName) && Objects.equals(country, director.country);
     }
 
     @Override
@@ -46,5 +48,14 @@ public class Director {
 
     public void setBirthYear(int birthYear) {
         this.birthYear = birthYear;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "fullName='" + fullName + '\'' +
+                ", country='" + country + '\'' +
+                ", birthYear=" + birthYear +
+                '}';
     }
 }

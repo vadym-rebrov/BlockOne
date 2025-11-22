@@ -1,24 +1,25 @@
 package dev.profitsoft.internship.rebrov.model;
-
 import java.util.List;
 import java.util.Objects;
 
 public class Movie {
     private String title;
-    private int releaseYear;
-    private List<String> genres;
-    private double rating;
+    private Integer releaseYear;
+    private String genres;
+    private Double rating;
     private Director director;
+    private List<String> awards;
 
-    @Override
-    public boolean equals(Object o) {
-        if (!(o instanceof Movie movie)) return false;
-        return releaseYear == movie.releaseYear && Double.compare(rating, movie.rating) == 0 && Objects.equals(title, movie.title) && Objects.equals(genres, movie.genres) && Objects.equals(director, movie.director);
+    public Movie(String title, Integer releaseYear, String genres, Double rating, Director director, List<String> awards) {
+        this.title = title;
+        this.releaseYear = releaseYear;
+        this.genres = genres;
+        this.rating = rating;
+        this.director = director;
+        this.awards = awards;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(title, releaseYear, genres, rating, director);
+    public Movie() {
     }
 
     public String getTitle() {
@@ -29,27 +30,27 @@ public class Movie {
         this.title = title;
     }
 
-    public int getReleaseYear() {
+    public Integer getReleaseYear() {
         return releaseYear;
     }
 
-    public void setReleaseYear(int releaseYear) {
+    public void setReleaseYear(Integer releaseYear) {
         this.releaseYear = releaseYear;
     }
 
-    public List<String> getGenres() {
+    public String getGenres() {
         return genres;
     }
 
-    public void setGenres(List<String> genres) {
+    public void setGenres(String genres) {
         this.genres = genres;
     }
 
-    public double getRating() {
+    public Double getRating() {
         return rating;
     }
 
-    public void setRating(double rating) {
+    public void setRating(Double rating) {
         this.rating = rating;
     }
 
@@ -60,4 +61,25 @@ public class Movie {
     public void setDirector(Director director) {
         this.director = director;
     }
+
+
+    public List<String> getAwards() {
+        return awards;
+    }
+
+    public void setAwards(List<String> awards) {
+        this.awards = awards;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Movie movie)) return false;
+        return Objects.equals(title, movie.title) && Objects.equals(releaseYear, movie.releaseYear) && Objects.equals(genres, movie.genres) && Objects.equals(rating, movie.rating) && Objects.equals(director, movie.director) && Objects.equals(awards, movie.awards);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, releaseYear, genres, rating, director, awards);
+    }
 }
+
