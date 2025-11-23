@@ -24,6 +24,10 @@ public class JsonParser<T> {
         this.type = type;
     }
 
+    /*
+        A universal method that transmits data to the consumer in the form of a pipeline
+        without loading the entire JSON file into memory using an iterator.
+     */
     public void readAndProcess(String directoryPath, int threadCount, Consumer<T> objectProcessor) {
         if (!isDirectoryPath(directoryPath)) {
             throw new IllegalArgumentException("Invalid directory path");
@@ -41,27 +45,29 @@ public class JsonParser<T> {
                 ? Math.min(Constant.MAX_THREAD_COUNT, threadCount)
                 : Constant.MAX_THREAD_COUNT;
 
-        ExecutorService executor = Executors.newFixedThreadPool(threads);
+        try (ExecutorService executor = Executors.newFixedThreadPool(threads)) {
 
-        for (File file : files) {
-            executor.submit(() -> {
-                try (MappingIterator<T> iterator = mapper.readerFor(type).readValues(file)) {
-                    while (iterator.hasNext()) {
-                        T obj = iterator.next();
-                        objectProcessor.accept(obj);
+            for (File file : files) {
+                executor.submit(() -> {
+                    try (MappingIterator<T> iterator = mapper.readerFor(type).readValues(file)) {
+                        while (iterator.hasNext()) {
+                            T obj = iterator.next();
+                            objectProcessor.accept(obj);
+                        }
+                    } catch (Exception e) {
+                        System.err.println("Error processing file " + file.getName() + ": " + e.getMessage());
                     }
-                } catch (Exception e) {
-                    System.err.println("Error processing file " + file.getName() + ": " + e.getMessage());
+                });
+            }
+            executor.shutdown();
+            try {
+                boolean finished = executor.awaitTermination(10, TimeUnit.MINUTES);
+                if (!finished){
+                    System.err.println("Timeout: Not all files were processed.");
                 }
-            });
-        }
-
-        executor.shutdown();
-        try {
-            boolean finished = executor.awaitTermination(10, TimeUnit.MINUTES);
-            if (!finished) System.err.println("Timeout: Not all files were processed.");
-        } catch (InterruptedException e) {
-            throw new RuntimeException("Interrupted while waiting for parsing", e);
+            } catch (InterruptedException e) {
+                throw new RuntimeException("Interrupted while waiting for parsing", e);
+            }
         }
     }
 

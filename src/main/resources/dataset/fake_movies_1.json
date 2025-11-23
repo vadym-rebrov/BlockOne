@@ -1,0 +1,111 @@
+[ {
+  "title" : "The Millstone",
+  "releaseYear" : 1968,
+  "genres" : "Mythology, Essay",
+  "rating" : 6.0,
+  "director" : {
+    "fullName" : "Basil Mills I",
+    "country" : "Philippines",
+    "birthYear" : 1963
+  },
+  "awards" : [ "Oscar", "Golden Globe Award" ]
+}, {
+  "title" : "The Way of All Flesh",
+  "releaseYear" : 1995,
+  "genres" : "Essay, Fantasy, Mystery, Classic",
+  "rating" : 7.1,
+  "director" : {
+    "fullName" : "Mittie Boyer",
+    "country" : "Dominican Republic",
+    "birthYear" : 1961
+  },
+  "awards" : [ "BAFTA", "Palme d’Or", "Golden Globe Award" ]
+}, {
+  "title" : "Antic Hay",
+  "releaseYear" : 1982,
+  "genres" : "Essay, Realistic fiction, Crime/Detective, Crime/Detective",
+  "rating" : 1.1,
+  "director" : {
+    "fullName" : "Edgar Hayes",
+    "country" : "Moldova",
+    "birthYear" : 1946
+  },
+  "awards" : [ "Palme d’Or", "Golden Globe Award" ]
+}, {
+  "title" : "The Mirror Crack'd from Side to Side",
+  "releaseYear" : 1956,
+  "genres" : "Reference book, Fiction in verse",
+  "rating" : 3.0,
+  "director" : {
+    "fullName" : "Dr. Alpha Ledner",
+    "country" : "Uzbekistan",
+    "birthYear" : 1971
+  },
+  "awards" : [ "Oscar", "BAFTA" ]
+}, {
+  "title" : "Nectar in a Sieve",
+  "releaseYear" : 1983,
+  "genres" : "Suspense/Thriller, Mythology, Mythopoeia, Tall tale",
+  "rating" : 7.8,
+  "director" : {
+    "fullName" : "Madeleine Jaskolski",
+    "country" : "Nicaragua",
+    "birthYear" : 1982
+  },
+  "awards" : [ "Oscar", "BAFTA", "Palme d’Or" ]
+}, {
+  "title" : "No Country for Old Men",
+  "releaseYear" : 1987,
+  "genres" : "Fiction in verse, Narrative nonfiction",
+  "rating" : 7.3,
+  "director" : {
+    "fullName" : "Barb O'Kon",
+    "country" : "Armenia",
+    "birthYear" : 1964
+  },
+  "awards" : [ "Golden Globe Award" ]
+}, {
+  "title" : "The Moving Toyshop",
+  "releaseYear" : 1989,
+  "genres" : "Fiction narrative, Fairy tale, Folklore, Mystery",
+  "rating" : 9.9,
+  "director" : {
+    "fullName" : "Dwana O'Kon",
+    "country" : "Timor-Leste",
+    "birthYear" : 1985
+  },
+  "awards" : [ "Palme d’Or", "Oscar" ]
+}, {
+  "title" : "Tirra Lirra by the River",
+  "releaseYear" : 2005,
+  "genres" : "Humor, Fiction in verse, Fantasy, Suspense/Thriller",
+  "rating" : 6.7,
+  "director" : {
+    "fullName" : "Jaimee Botsford",
+    "country" : "Togo",
+    "birthYear" : 1973
+  },
+  "awards" : [ "Golden Globe Award", "BAFTA" ]
+}, {
+  "title" : "Brandy of the Damned",
+  "releaseYear" : 1983,
+  "genres" : "Comic/Graphic Novel, Fiction in verse, Mythopoeia, Fanfiction",
+  "rating" : 6.0,
+  "director" : {
+    "fullName" : "Nenita Kuvalis",
+    "country" : "Burkina Faso",
+    "birthYear" : 1950
+  },
+  "awards" : [ "Palme d’Or" ]
+}, {
+  "title" : "Paths of Glory",
+  "releaseYear" : 1995,
+  "genres" : "Suspense/Thriller, Science fiction, Humor",
+  "rating" : 4.2,
+  "director" : {
+    "fullName" : "Loren Larkin",
+    "country" : "Nauru",
+    "birthYear" : 1991
+  },
+  "awards" : [ "Golden Globe Award", "Oscar" ]
+} ]

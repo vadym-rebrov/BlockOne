@@ -7,18 +7,20 @@ import dev.profitsoft.internship.rebrov.parser.JsonParser;
 
 import java.util.*;
 
+/*
+* Generating fake data for dataset using Faker library
+*/
 public class FakeDataGenerator {
 
-    public static final int NUMBER_OF_FILES = 100;
+    public static final int NUMBER_OF_FILES = 10;
 
 
     public static void main(String[] args) {
-        int k = 0;
+        int k  = NUMBER_OF_FILES;
         for(int i = 1; i<= NUMBER_OF_FILES;i++){
-            k += 5*i;
-            generateFakeMoviesJson(k, ("C:/Users/PC/Documents/dataset/fake_movies_"+i+".json"));
+            generateFakeMoviesJson(k, ("./src/main/resources/dataset/fake_movies_"+i+".json"));
         }
-        System.out.println("Total files: " + NUMBER_OF_FILES + ". Total movies: " + k + ".");
+        System.out.println("Total files: " + NUMBER_OF_FILES + ". Total movies: " + k*NUMBER_OF_FILES + ".");
     }
 
     private static final Faker FAKER = new Faker();

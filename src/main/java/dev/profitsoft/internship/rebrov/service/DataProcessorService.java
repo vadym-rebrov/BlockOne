@@ -5,26 +5,27 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.*;
 import java.util.concurrent.*;
-import java.util.stream.Collectors;
+
+import static dev.profitsoft.internship.rebrov.validation.CustomValidator.isClassAttribute;
 
 
 public class DataProcessorService<T> {
 
     private final Map<String, List<AccessibleObject>> chainCache = new ConcurrentHashMap<>();
 
-    public Map<String, Integer> countByItem(T item, String paramPath) {
-        if (item == null || paramPath == null) {
-            return Collections.emptyMap();
+    public Map<String, Integer> countAttributeValuesByItem(T item, String attributePath) {
+        if (item == null || attributePath == null || !isClassAttribute(attributePath)) {
+            throw new IllegalArgumentException("Invalid arguments");
         }
-
+        // Processing and caching chain of attributes. Example: director.fullName
         List<AccessibleObject> chain;
-        if(chainCache.containsKey(paramPath)){
-            chain = chainCache.get(paramPath);
+        if(chainCache.containsKey(attributePath)){
+            chain = chainCache.get(attributePath);
         }else {
-            chain = resolvePath(item.getClass(), paramPath);
-            chainCache.put(paramPath, chain);
+            chain = resolvePath(item.getClass(), attributePath);
+            chainCache.put(attributePath, chain);
         }
-
+        // Check if attribute is Collection or Array
         boolean isCollection = isCollectionType(getLastType(chain));
 
         Map<String, Integer> result = new HashMap<>();
@@ -80,6 +81,7 @@ public class DataProcessorService<T> {
         return chain;
     }
 
+    // Add collection attribute or String with comma separated values counting
     private void addToMap(Map<String, Integer> map, Object value, boolean isCollection) {
         if (isCollection) {
             if (value instanceof Collection<?> c){

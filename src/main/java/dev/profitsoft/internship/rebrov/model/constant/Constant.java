@@ -2,21 +2,15 @@ package dev.profitsoft.internship.rebrov.model.constant;
 
 public class Constant {
     /*
-     * Допускає абсолютний шлях до директорії Windows або Unix типів.
-     * Windows: C:\folder\sub\
-     * Unix: /home/user/docs/
-     * Заборонені символи Windows: *?"<>|
-     * Дозволяє завершальний символ '\' або '/'
+     *   Allow absolute and local path, Unix or Windows Type
      */
     public static final String DIRECTORY_PATH_REGEX = "^(?:[A-Za-z]:[\\\\/]|[^\\\\/\\*?\"<>|:]|[./])?[^*?\"<>|]*[\\\\/]?$";
 
     /*
-     * Дозволяються лише:
-     * - латинські літери в нижньому регістрі
-     * - вкладені атрибути розділяються через "."
-     * Заборонено завершувати рядок на "."
+     *
+     * Allow only latin letters with dot separated values
      */
-    public static final String ATTR_REGEX = "^[a-z]+(?:\\.[a-z]+)*$";
+    public static final String ATTR_REGEX = "^[A-Za-z]+(?:\\.[A-Za-z]+)*$";
 
     public static final Integer MAX_THREAD_COUNT = 8;
 

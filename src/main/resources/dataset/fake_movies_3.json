@@ -1,0 +1,111 @@
+[ {
+  "title" : "The Little Foxes",
+  "releaseYear" : 2016,
+  "genres" : "Horror",
+  "rating" : 8.7,
+  "director" : {
+    "fullName" : "Ms. Julius Kreiger",
+    "country" : "Thailand",
+    "birthYear" : 1980
+  },
+  "awards" : [ "BAFTA", "Oscar" ]
+}, {
+  "title" : "No Country for Old Men",
+  "releaseYear" : 1952,
+  "genres" : "Mystery, Classic",
+  "rating" : 4.0,
+  "director" : {
+    "fullName" : "Cassaundra Barrows",
+    "country" : "Timor-Leste",
+    "birthYear" : 1990
+  },
+  "awards" : [ "Palme d’Or", "Golden Globe Award", "BAFTA" ]
+}, {
+  "title" : "The Last Temptation",
+  "releaseYear" : 1992,
+  "genres" : "Horror, Essay",
+  "rating" : 2.6,
+  "director" : {
+    "fullName" : "Vi Kunze",
+    "country" : "Cote d'Ivoire",
+    "birthYear" : 1943
+  },
+  "awards" : [ "Golden Globe Award" ]
+}, {
+  "title" : "The Daffodil Sky",
+  "releaseYear" : 1968,
+  "genres" : "Western, Western, Reference book, Suspense/Thriller",
+  "rating" : 1.4,
+  "director" : {
+    "fullName" : "Dorine Will",
+    "country" : "Hungary",
+    "birthYear" : 1993
+  },
+  "awards" : [ "Oscar" ]
+}, {
+  "title" : "The Way of All Flesh",
+  "releaseYear" : 1982,
+  "genres" : "Realistic fiction, Suspense/Thriller, Short story, Narrative nonfiction",
+  "rating" : 4.2,
+  "director" : {
+    "fullName" : "Pedro Sauer",
+    "country" : "Belgium",
+    "birthYear" : 1983
+  },
+  "awards" : [ "Palme d’Or" ]
+}, {
+  "title" : "Blithe Spirit",
+  "releaseYear" : 1965,
+  "genres" : "Narrative nonfiction, Historical fiction, Textbook, Horror",
+  "rating" : 7.4,
+  "director" : {
+    "fullName" : "Howard Fisher",
+    "country" : "Albania",
+    "birthYear" : 1947
+  },
+  "awards" : [ "Palme d’Or", "Oscar" ]
+}, {
+  "title" : "No Longer at Ease",
+  "releaseYear" : 1961,
+  "genres" : "Crime/Detective, Metafiction, Western",
+  "rating" : 5.0,
+  "director" : {
+    "fullName" : "Ms. Alishia Predovic",
+    "country" : "Congo",
+    "birthYear" : 1936
+  },
+  "awards" : [ "Golden Globe Award", "BAFTA" ]
+}, {
+  "title" : "An Acceptable Time",
+  "releaseYear" : 1962,
+  "genres" : "Narrative nonfiction, Historical fiction",
+  "rating" : 3.8,
+  "director" : {
+    "fullName" : "Loria Ernser",
+    "country" : "Mayotte",
+    "birthYear" : 1937
+  },
+  "awards" : [ "Oscar", "Golden Globe Award" ]
+}, {
+  "title" : "The Line of Beauty",
+  "releaseYear" : 1990,
+  "genres" : "Mythopoeia, Narrative nonfiction, Humor, Mythology",
+  "rating" : 5.9,
+  "director" : {
+    "fullName" : "Erlene Schmitt",
+    "country" : "Egypt",
+    "birthYear" : 1968
+  },
+  "awards" : [ "Palme d’Or", "BAFTA", "Golden Globe Award" ]
+}, {
+  "title" : "Far From the Madding Crowd",
+  "releaseYear" : 1956,
+  "genres" : "Suspense/Thriller, Metafiction, Humor",
+  "rating" : 1.1,
+  "director" : {
+    "fullName" : "Madlyn Gusikowski",
+    "country" : "Lithuania",
+    "birthYear" : 1931
+  },
+  "awards" : [ "Palme d’Or", "Golden Globe Award", "Oscar" ]
+} ]

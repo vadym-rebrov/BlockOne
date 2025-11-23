@@ -1,0 +1,111 @@
+[ {
+  "title" : "Eyeless in Gaza",
+  "releaseYear" : 1985,
+  "genres" : "Textbook",
+  "rating" : 3.3,
+  "director" : {
+    "fullName" : "Domenic McGlynn",
+    "country" : "Niger",
+    "birthYear" : 1980
+  },
+  "awards" : [ "Golden Globe Award", "Oscar" ]
+}, {
+  "title" : "The Heart Is a Lonely Hunter",
+  "releaseYear" : 1968,
+  "genres" : "Horror, Mythopoeia, Classic",
+  "rating" : 8.3,
+  "director" : {
+    "fullName" : "Ji Kerluke",
+    "country" : "Latvia",
+    "birthYear" : 1985
+  },
+  "awards" : [ "BAFTA", "Oscar" ]
+}, {
+  "title" : "Of Mice and Men",
+  "releaseYear" : 1988,
+  "genres" : "Realistic fiction, Narrative nonfiction",
+  "rating" : 5.4,
+  "director" : {
+    "fullName" : "Bert Hintz",
+    "country" : "Slovakia (Slovak Republic)",
+    "birthYear" : 1984
+  },
+  "awards" : [ "BAFTA", "Oscar" ]
+}, {
+  "title" : "The Wind's Twelve Quarters",
+  "releaseYear" : 1985,
+  "genres" : "Comic/Graphic Novel, Fable, Mythopoeia, Realistic fiction",
+  "rating" : 2.9,
+  "director" : {
+    "fullName" : "Hayley Bailey",
+    "country" : "Vanuatu",
+    "birthYear" : 1951
+  },
+  "awards" : [ "Palme d’Or", "Oscar" ]
+}, {
+  "title" : "Cabbages and Kings",
+  "releaseYear" : 1965,
+  "genres" : "Fiction in verse, Fairy tale, Fanfiction",
+  "rating" : 6.1,
+  "director" : {
+    "fullName" : "Alphonso Greenholt DVM",
+    "country" : "Saint Lucia",
+    "birthYear" : 1938
+  },
+  "awards" : [ "BAFTA", "Oscar" ]
+}, {
+  "title" : "Look to Windward",
+  "releaseYear" : 1969,
+  "genres" : "Fanfiction, Tall tale, Realistic fiction, Biography/Autobiography",
+  "rating" : 8.1,
+  "director" : {
+    "fullName" : "Casandra Johns",
+    "country" : "Ethiopia",
+    "birthYear" : 1969
+  },
+  "awards" : [ "Palme d’Or", "Oscar" ]
+}, {
+  "title" : "Eyeless in Gaza",
+  "releaseYear" : 1991,
+  "genres" : "Crime/Detective",
+  "rating" : 5.3,
+  "director" : {
+    "fullName" : "Latosha Schmidt",
+    "country" : "Virgin Islands, U.S.",
+    "birthYear" : 1977
+  },
+  "awards" : [ "Golden Globe Award", "BAFTA" ]
+}, {
+  "title" : "Many Waters",
+  "releaseYear" : 1965,
+  "genres" : "Essay, Mythopoeia",
+  "rating" : 4.4,
+  "director" : {
+    "fullName" : "Miles Harvey",
+    "country" : "Chad",
+    "birthYear" : 1931
+  },
+  "awards" : [ "Golden Globe Award", "BAFTA" ]
+}, {
+  "title" : "Many Waters",
+  "releaseYear" : 1981,
+  "genres" : "Speech, Science fiction, Fiction narrative",
+  "rating" : 5.9,
+  "director" : {
+    "fullName" : "Susy Cronin",
+    "country" : "Burundi",
+    "birthYear" : 1946
+  },
+  "awards" : [ "Palme d’Or", "Oscar" ]
+}, {
+  "title" : "The Proper Study",
+  "releaseYear" : 1960,
+  "genres" : "Comic/Graphic Novel, Metafiction, Realistic fiction",
+  "rating" : 5.3,
+  "director" : {
+    "fullName" : "Miss Thaddeus Littel",
+    "country" : "Nigeria",
+    "birthYear" : 1990
+  },
+  "awards" : [ "Palme d’Or", "Oscar", "Golden Globe Award" ]
+} ]
