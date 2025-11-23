@@ -1,4 +1,4 @@
-package dev.profitsoft.internship.rebrov.impl.parser.impl;
+package dev.profitsoft.internship.rebrov.parser.impl;
 
 import dev.profitsoft.internship.rebrov.model.Movie;
 import dev.profitsoft.internship.rebrov.parser.impl.MovieJsonParser;

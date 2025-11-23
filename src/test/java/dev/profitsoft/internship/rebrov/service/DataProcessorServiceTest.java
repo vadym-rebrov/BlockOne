@@ -1,4 +1,4 @@
-package dev.profitsoft.internship.rebrov.impl.service;
+package dev.profitsoft.internship.rebrov.service;
 
 import dev.profitsoft.internship.rebrov.model.Director;
 import dev.profitsoft.internship.rebrov.model.Movie;
